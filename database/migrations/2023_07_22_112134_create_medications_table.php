@@ -1,0 +1,155 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('medications', function (Blueprint $table) {
+            $table->id();
+            $table->text("care_support_need")->nullable();
+            $table->text("care_support_need_other_text")->nullable();
+            $table->text("dosage_able_to")->nullable();
+            $table->text("dosage_support_to")->nullable();
+            $table->text("medication_able_to")->nullable();
+            $table->text("medication_support_to")->nullable();
+            $table->text("drink_able_to")->nullable();
+            $table->text("drink_support_to")->nullable();
+            $table->text("original_able_to")->nullable();
+            $table->text("original_support_to")->nullable();
+            $table->text("administer_able_to")->nullable();
+            $table->text("administer_support_to")->nullable();
+            $table->text("maintain_health_conditions")->nullable();
+            $table->text("skin_remain_healthy")->nullable();
+            $table->text("maximize_independence")->nullable();
+            $table->text("desire_not_fall")->nullable();
+            $table->text("maintain_dignity")->nullable();
+            $table->text("avoid_unnecessary_dentist")->nullable();
+            $table->text("desire_clean_smart")->nullable();
+            $table->text("maintain_healthey_lifestyle")->nullable();
+            $table->text("unnecessary_hospital")->nullable();
+            $table->text("maintain_good_relation")->nullable();
+            $table->text("quality_life")->nullable();
+            $table->text("malnutrition_dehydration")->nullable();
+            $table->text("verbally_remind")->nullable();
+            $table->text("medication_dosage")->nullable();
+            $table->text("administer_includes")->nullable();
+            $table->text("physically_taking")->nullable();
+            $table->text("medication_during")->nullable();
+            $table->text("medication_from")->nullable();
+            $table->text("medication_eye")->nullable();
+            $table->text("medication_patches")->nullable();
+            $table->text("medication_prescribed_cream")->nullable();
+            $table->text("medication_inhaler")->nullable();
+            $table->text("who_support_medication_eye")->nullable();
+            $table->text("who_support_medication_eye_other_text")->nullable();
+            $table->text("who_support_medication_patches")->nullable();
+            $table->text("who_support_medication_patches_other_text")->nullable();
+            $table->text("who_support_medication_prescribed")->nullable();
+            $table->text("who_support_medication_prescribed_other_text")->nullable();
+            $table->text("who_support_medication_inhaler")->nullable();
+            $table->text("who_support_medication_inhaler_other_text")->nullable();
+            $table->text("frequency_medication_eye")->nullable();
+            $table->text("frequency_medication_patches")->nullable();
+            $table->text("frequency_medication_patches_other_text")->nullable();
+            $table->text("frequency_medication_prescribed")->nullable();
+            $table->text("frequency_medication_inhaler")->nullable();
+            $table->text("position_37")->nullable();
+            $table->text("position_38")->nullable();
+            $table->text("position_39")->nullable();
+            $table->text("position_40")->nullable();
+            $table->text("position_41")->nullable();
+            $table->text("position_42")->nullable();
+            $table->text("position_43")->nullable();
+            $table->text("position_44")->nullable();
+            $table->text("position_45")->nullable();
+            $table->text("position_46")->nullable();
+            $table->text("position_47")->nullable();
+            $table->text("position_48")->nullable();
+            $table->text("position_49")->nullable();
+            $table->text("position_50")->nullable();
+            $table->text("position_51")->nullable();
+            $table->text("position_52")->nullable();
+            $table->text("position_53")->nullable();
+            $table->text("position_54")->nullable();
+            $table->text("medication_kept")->nullable();
+            $table->text("medication_kept_other_text")->nullable();
+            $table->text("support_medication")->nullable();
+            $table->text("support_medication_other_text")->nullable();
+            $table->text("deliver_medication")->nullable();
+            $table->text("deliver_medication_other_text")->nullable();
+            $table->text("frequency_medication_delivery")->nullable();
+            $table->text("frequency_medication_delivery_other_text")->nullable();
+            $table->text("support_required_from")->nullable();
+            $table->text("support_required_from_other_text")->nullable();
+            $table->text("dose_medication_1")->nullable();
+            $table->text("dose_medication_2")->nullable();
+            $table->text("dose_medication_4")->nullable();
+            $table->text("dose_medication_5")->nullable();
+            $table->text("minimum_1")->nullable();
+            $table->text("minimum_2")->nullable();
+            $table->text("minimum_3")->nullable();
+            $table->text("minimum_4")->nullable();
+            $table->text("why_medication_needed_1")->nullable();
+            $table->text("why_medication_needed_2")->nullable();
+            $table->text("why_medication_needed_3")->nullable();
+            $table->text("why_medication_needed_4")->nullable();
+            $table->text("why_medication_needed_minimum_1")->nullable();
+            $table->text("why_medication_needed_minimum_2")->nullable();
+            $table->text("why_medication_needed_minimum_3")->nullable();
+            $table->text("why_medication_needed_minimum_4")->nullable();
+            $table->text("why_medication_second_1")->nullable();
+            $table->text("why_medication_second_2")->nullable();
+            $table->text("why_medication_second_3")->nullable();
+            $table->text("why_medication_second_4")->nullable();
+            $table->text("circumstances_medication_1")->nullable();
+            $table->text("circumstances_medication_2")->nullable();
+            $table->text("circumstances_medication_3")->nullable();
+            $table->text("circumstances_medication_4")->nullable();
+            $table->text("liaise_gp_persistent_1")->nullable();
+            $table->text("liaise_gp_persistent_2")->nullable();
+            $table->text("liaise_gp_persistent_3")->nullable();
+            $table->text("liaise_gp_persistent_4")->nullable();
+            $table->text("liaise_gp_no_desired_1")->nullable();
+            $table->text("liaise_gp_no_desired_2")->nullable();
+            $table->text("liaise_gp_no_desired_3")->nullable();
+            $table->text("liaise_gp_no_desired_4")->nullable();
+            $table->text("liaise_gp_requests_dosage_1")->nullable();
+            $table->text("liaise_gp_requests_dosage_2")->nullable();
+            $table->text("liaise_gp_requests_dosage_3")->nullable();
+            $table->text("liaise_gp_requests_dosage_4")->nullable();
+            $table->text("liaise_gp_requests_too_1")->nullable();
+            $table->text("liaise_gp_requests_too_2")->nullable();
+            $table->text("liaise_gp_requests_too_3")->nullable();
+            $table->text("liaise_gp_requests_too_4")->nullable();
+            $table->text("liaise_gp_side_effects_1")->nullable();
+            $table->text("liaise_gp_side_effects_2")->nullable();
+            $table->text("liaise_gp_side_effects_3")->nullable();
+            $table->text("liaise_gp_side_effects_4")->nullable();
+            $table->text("liaise_gp_other_1")->nullable();
+            $table->text("liaise_gp_other_2")->nullable();
+            $table->text("liaise_gp_other_3")->nullable();
+            $table->text("liaise_gp_other_4")->nullable();
+            $table->integer('patient_id')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('medications');
+    }
+};
